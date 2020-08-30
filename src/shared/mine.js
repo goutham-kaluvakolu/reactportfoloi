@@ -1,0 +1,1 @@
+export const obj1={"name":"k Goutham Kumar Reddy","study":"Btech"}

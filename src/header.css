@@ -1,0 +1,73 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    color:white;
+    overflow: scroll;
+    padding: 20px;
+    align-items:center ;
+}
+.header>h2{
+    color:#1400c6;
+    font-weight: 900;
+    font-size: xx-large;
+    height:50px;
+}
+
+.header__icons{
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+.header__icon{
+    display:flex;
+    flex-direction: column;
+    width:100px;
+    cursor: pointer;
+    
+    text-align: center;
+    
+}
+.header__icon>.MuiSvgIcon-root{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 33px;
+    color:black;
+
+}
+
+.header__icon>p{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size:medium;
+    display: none;
+    color:#ff414e ;
+  
+}
+.header__icon:hover>p{
+    display:block;
+    color:#ff414e ;
+}
+.header__icon--active>p{
+    display: inline ;
+}
+.header__icon--active>.MuiSvgIcon-root{
+    color:#1400c6;
+    
+}
+.header__icon:hover>.MuiSvgIcon-root{
+    color:#1400c6;
+    
+}
+
+
+
+.header::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .header {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
